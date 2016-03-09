@@ -83,11 +83,11 @@ or
 ### All Options
 ```bash
 --name              Name of schema migration to use when using 'generate' task.
---username          C* Username
---password          C* Password
---ip                Server IP address (default: 127.0.0.1)
---port              Server's Cassandra Port (default: 9042)
---con               C* Insert Consistency (default LOCAL_QUARUM)
+--username          Cassandra server Username (default: None) 
+--password          Cassandra server Password (default: None)
+--ip                Cassandra server IP address (default: 127.0.0.1)
+--port              Cassandra server Port (default: 9042)
+--con               C* Insert Consistency (default: LOCAL_QUARUM)
 --timeout           Session default_timeout (default: 60s)
 --debug             Should debug console logs be enabled (default: False)
 --protocol_version  CQL protocol_version (default: 3)
@@ -95,7 +95,8 @@ or
 --steps             Rollback number of migrations (default: 1)
 ```
 
-## Changes from (https://github.com/ibspoof/cassandra-migrations)
+## Changes from original cassandra-migrations
+URL: https://github.com/ibspoof/cassandra-migrations
 - Moved to JSON as migration file format
 - Changed rollback operation to be based on latest DB entries instead of files
 - Added `--steps` option for rolling back multiple migrations

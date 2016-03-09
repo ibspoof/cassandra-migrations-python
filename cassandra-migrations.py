@@ -103,8 +103,8 @@ def _app_help():
 
   All Options:
     --name              Name of schema migration to use when using 'generate' task.
-    --ip                Server IP address (default: 127.0.0.1)
-    --port              Server's Cassandra Port (default: 9042)
+    --ip                Cassandra server IP address (default: 127.0.0.1)
+    --port              Cassandra server Port (default: 9042)
     --con               C* Insert Consistency (default LOCAL_QUARUM)
     --timeout           Session default_timeout
     --username          C* Username
