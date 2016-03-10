@@ -33,7 +33,7 @@ Full Help
 ```
 ./cassandra-migrations.py generate {keyspace} --name {name}
 ```
-This creates a new file  /migrations/{keyspace}/20140914222010_{MigrationName}.xml
+This creates a new file  /migrations/{keyspace}/20140914222010_{name}.json
 ```json
 {
     "up": [
@@ -83,7 +83,7 @@ or
 ### All Options
 ```bash
 --name              Name of schema migration to use when using 'generate' task.
---username          Cassandra server Username (default: None) 
+--username          Cassandra server Username (default: None)
 --password          Cassandra server Password (default: None)
 --ip                Cassandra server IP address (default: 127.0.0.1)
 --port              Cassandra server Port (default: 9042)
